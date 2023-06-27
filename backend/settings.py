@@ -198,14 +198,13 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ALLOWED_ORIGINS = [
-                       "http://18.212.238.169",
+                       
                        "http://127.0.0.1:8000",
                        
                        
                         ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://18.212.238.169",
     "http://127.0.0.1:8000",
     
 ]
