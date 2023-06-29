@@ -46,6 +46,7 @@ class ProductSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Product
+        
         fields = '__all__'
 
     def get_reviews(self,obj):
