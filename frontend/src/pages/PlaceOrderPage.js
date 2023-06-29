@@ -53,13 +53,12 @@ export default function PlaceOrderPage() {
                         <strong>Shipping:</strong>
                         {cart.shippingAddress.address},{cart.shippingAddress.city},
                         {''}
-                        {cart.shippingAddress.postalcode},
-                        {''}
-                        {cart.shippingAddress.country}
+                        {cart.shippingAddress.country}- {''}
+                        {cart.shippingAddress.postalcode}
                         
                     </p>
                     <p>
-                        <strong>Mobile No:</strong> {''}
+                        <strong>Mobile No: </strong> {''}
                         {cart.shippingAddress.mobileNo}
                     </p>
                 </ListGroup.Item>

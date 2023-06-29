@@ -175,11 +175,9 @@ export default function OrdersPage() {
                         <strong>Shipping: </strong>
                         {order.shippingAddress.address},{order.shippingAddress.city},
                         {''}
-                        {order.shippingAddress.postalcode},
-                        {''}
-                        {order.shippingAddress.country}
+                        {order.shippingAddress.country}-{order.shippingAddress.postalCode}
                     </p>
-                    {order.isDelivered ? (<Message variant='success'>Delivered On {order.deliveredAt}</Message>
+                    {order.isDelivered ? (<Message variant='success'>Delivered On {(order.deliveredAt).substring(0,10)}</Message>
                      ):(<Message variant='warning'>Not Delivered</Message>)}
                 </ListGroup.Item>
 
